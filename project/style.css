@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 400px;
+    margin: auto;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    letter-spacing: 2px;
+}
+
+/* Button container feel */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+button {
+    width: 220px;
+    /* margin: 15px auto; */
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: #111;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(255, 152, 0, 0.6);
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Different glow for each button (unique look) */
+button:nth-of-type(1) {
+    background: linear-gradient(135deg, #4caf50, #8bc34a);
+}
+
+button:nth-of-type(2) {
+    background: linear-gradient(135deg, #03a9f4, #00bcd4);
+}
+
+button:nth-of-type(3) {
+    background: linear-gradient(135deg, #e91e63, #ff4081);
+}
+
+button:nth-of-type(1):hover {
+    box-shadow: 0 0 30px rgba(76, 175, 80, 0.8);
+}
+
+button:nth-of-type(2):hover {
+    box-shadow: 0 0 30px rgba(3, 169, 244, 0.8);
+}
+
+button:nth-of-type(3):hover {
+    box-shadow: 0 0 30px rgba(233, 30, 99, 0.8);
+}
+
+
+
+/* media query */
+@media (max-width: 425px) {
+
+    h1 {
+        height: auto;
+        padding: 20px;
+        font-size: 1.8rem;
+        text-align: center;
+        border: none;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        border: none;
+    }
+
+    button {
+        width: 90%;
+        max-width: 320px;
+        font-size: 16px;
+        padding: 14px 0;
+    }
+}
